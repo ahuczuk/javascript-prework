@@ -1,6 +1,5 @@
 var argButtonName, buttonTest;
 
-buttonTest = document.getElementById('button-test');
 buttonKamień = document.getElementById('button-rock');
 buttonNożyce = document.getElementById('button-scissors');
 buttonPapier = document.getElementById('button-paper');
