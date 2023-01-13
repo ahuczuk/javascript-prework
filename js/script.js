@@ -41,7 +41,7 @@ function buttonClicked(argButtonName) {
       printMessage('Wygrywasz!');
     } else {
     }
-    if (argPlayerMove == 'kamień' && argComputerMove == 'kamień') {
+    if (argPlayerMove == && argComputerMove == ) {
       printMessage('Remis');
     } else {
     }
@@ -58,7 +58,6 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPapper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
