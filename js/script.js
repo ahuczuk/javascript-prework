@@ -1,4 +1,4 @@
-var argButtonName, buttonTest;
+var argButtonName, buttonKamień, buttonNożyce, buttonPapier;
 
 buttonKamień = document.getElementById('button-rock');
 buttonNożyce = document.getElementById('button-scissors');
@@ -57,7 +57,7 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
-buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPapper.addEventListener('click', function(){ buttonClicked('papier'); });
-buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
+buttonKamień.addEventListener('click', function(){ buttonClicked('kamień'); });
+buttonPapier.addEventListener('click', function(){ buttonClicked('papier'); });
+buttonNożyce.addEventListener('click', function(){ buttonClicked('nożyce'); });
     
