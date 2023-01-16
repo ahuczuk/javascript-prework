@@ -1,8 +1,6 @@
-var argButtonName, buttonKamień, buttonNożyce, buttonPapier;
-
-buttonKamień = document.getElementById('button-rock');
-buttonNożyce = document.getElementById('button-scissors');
-buttonPapier = document.getElementById('button-paper');
+const buttonKamień = document.getElementById('button-rock');
+const buttonNożyce = document.getElementById('button-scissors');
+const buttonPapier = document.getElementById('button-paper');
 
 
 function buttonClicked(argButtonName) {
@@ -40,7 +38,7 @@ function buttonClicked(argButtonName) {
       printMessage('Wygrywasz!');
     } else {
     }
-    if (argPlayerMove == && argComputerMove == ) {
+    if (argPlayerMove == argComputerMove) {
       printMessage('Remis');
     } else {
     }
@@ -48,16 +46,15 @@ function buttonClicked(argButtonName) {
   }
 
   
-playerMove = argButtonName;
+const playerMove = argButtonName;
 console.log('wybór ruchu gracza to: ' + playerInput);
 console.log('ruch gracza to: ' + playerMove);
-randomNumber = Math.floor(Math.random() * 3 + 1);
+const randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+const computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
 buttonKamień.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPapier.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonNożyce.addEventListener('click', function(){ buttonClicked('nożyce'); });
-    
